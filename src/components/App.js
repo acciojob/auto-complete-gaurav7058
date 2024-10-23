@@ -23,7 +23,7 @@ const App = () => {
                 <li>{item}</li>
               </ul>
             </div>
-          })) : (<div>No data found</div>)
+          })) : (<ul>invalid data</ul>)
 
         }
     </div>
