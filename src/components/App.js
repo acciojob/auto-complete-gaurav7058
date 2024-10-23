@@ -17,13 +17,14 @@ const App = () => {
     <div>
         <input type="text" onChange={searchHandler}/>
         {
-          searchData.map((item,id)=>{
+          searchData.length>0 ? (searchData.map((item,id)=>{
             return  <div className="" key={id}> 
               <ul>
                 <li>{item}</li>
               </ul>
             </div>
-          })
+          })) : (<div>No data found</div>)
+
         }
     </div>
   )
